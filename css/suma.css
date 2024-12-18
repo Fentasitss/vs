@@ -1,0 +1,20 @@
+body{
+    background-image: url(https://img.freepik.com/free-vector/background-knowledge-day-celebration_52683-131709.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+ }
+ div{
+    box-shadow: rgb(238, 187, 92) 0px 54px 55px, rgb(252, 218, 107) 0px -12px 30px, rgba(255, 206, 71, 0.993) 0px 4px 6px, rgb(230, 155, 69) 0px 12px 13px, rgb(230, 220, 79) 0px -3px 5px;
+    width: 400px;
+    font-size: 25px;
+    font-family: monospace;
+      color: #ffffff;
+      border-radius: 20px;
+      padding: 15px 20px;
+      text-align: center;
+      margin: 10px auto;
+      margin-top: 15%;
+      background-color: #131110e4;
+  }

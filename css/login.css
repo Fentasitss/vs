@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&family=Pacifico&display=swap');
+body{
+    background-image: url(https://city-ck.com/upload/images/oboi_na_rabochiy_stol.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+ }
+ .pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  div{
+    box-shadow: rgb(240, 150, 240) 0px 54px 55px, rgb(250, 153, 245) 0px -12px 30px, rgb(252, 142, 243) 0px 4px 6px, rgb(228, 99, 245) 0px 12px 13px, rgb(235, 124, 245) 0px -3px 5px;
+    width: 300px;
+    font-size: 25px;
+      color: #212020;
+      border-radius: 20px;
+      padding: 15px 20px;
+      text-align: center;
+      margin: 10px auto;
+      margin-top: 15%;
+      background-color: #ee6aace4;
+  }

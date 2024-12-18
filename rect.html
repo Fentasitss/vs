@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+   background-color: #c0c7ee;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   text-align: center;
+}
+div{
+    box-shadow: rgb(255, 115, 115) 0px 54px 55px, rgb(238, 170, 69) 0px -12px 30px, rgb(240, 137, 137) 0px 4px 6px, rgb(245, 163, 95) 0px 12px 13px, rgba(248, 106, 106, 0.973) 0px -3px 5px;
+    width: 300px;
+    font-size: 25px;
+    font-family:  monospace;
+      color: #c26e6e;
+      border-radius: 15px;
+      padding: 15px 20px;
+      text-align: center;
+      margin: 20px auto;
+      margin-top: 250px;
+      background-color: #b4bffc;
+  }
+    </style>
+    <script>
+        let a=+prompt("Перша сторона ");
+        let b=+prompt("Друга сторона");
+        let P=(a+b+a+b);
+        let p=(a+b)/2;
+        let S=a*b;
+        document.write(`<div><p>Площа прямокутника зі сторонами ${a}, ${b} дорівнює ${S}<br></div></p>`);
+        document.write(`<div><p>Периметр прямокутника зі сторонами ${a}, ${b} дорівнює ${P}</div></p>`);
+</script>
+</body>
+</html>

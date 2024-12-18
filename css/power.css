@@ -1,0 +1,20 @@
+body{
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200604/pngtree-cute-hand-drawn-style-mathematics-education-pink-stripes-background-image_337556.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+ }
+ div{
+    box-shadow: rgb(214, 212, 96) 0px 54px 55px, rgb(240, 221, 158) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 300px;
+    font-size: 25px;
+    font-family:  monospace;
+      color: #212020;
+      border-radius: 15px;
+      padding: 15px 20px;
+      text-align: center;
+      margin: 20px auto;
+      margin-top: 200px;
+      background-color: #f5ecbaf3;
+  }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         body {
+            font-size: 50px;
+            color: rgb(255, 255, 189);
+            background-color: rgb(159, 238, 238);
+            text-align: center;
+        }
+    </style>
+    <h2>Список столиць:</h2>
+    <ul id="capitalList"></ul>
+
+    <div>
+        <label for="sortType">Тип сортування:</label>
+        <select id="sortType" onchange="sortCapitals()">
+            <option value="alphabet">За алфавітом</option>
+            <option value="population">За кількістю населення</option>
+        </select>
+    </div>
+
+    <script>
+        var capitals = {
+            "Київ": 2804000,
+            "Варшава": 1796000,
+            "Берлін": 3645000,
+            "Париж": 2141000,
+            "Лондон": 89820000
+        };
+
+        function displayCapitalList() {
+            var capitalList = document.getElementById("capitalList");
+            capitalList.innerHTML = "";
+
+            Object.keys(capitals).forEach(function (capital) {
+                var listItem = document.createElement("li");
+                listItem.textContent = capital + " - " + capitals[capital] + " нас.";
+                capitalList.appendChild(listItem);
+            });
+        }
+        function sortAlphabetically() {
+            displayCapitalList();
+            var capitalList = document.getElementById("capitalList");
+            capitalList.innerHTML = "";
+            Object.keys(capitals).sort().forEach(function (capital) {
+                var listItem = document.createElement("li");
+                listItem.textContent = capital + " - " + capitals[capital] + " нас.";
+                capitalList.appendChild(listItem);
+            });
+        }
+        function sortByPopulation() {
+            displayCapitalList();
+            var capitalList = document.getElementById("capitalList");
+            capitalList.innerHTML = "";
+            Object.keys(capitals).sort(function (a, b) {
+                return capitals[a] - capitals[b];
+            }).forEach(function (capital) {
+                var listItem = document.createElement("li");
+                listItem.textContent = capital + " - " + capitals[capital] + " нас.";
+                capitalList.appendChild(listItem);
+            });
+        }
+        function sortCapitals() {
+            var sortType = document.getElementById("sortType").value;
+            if (sortType === "alphabet") {
+                sortAlphabetically();
+            } else if (sortType === "population") {
+                sortByPopulation();
+            }
+        }
+        displayCapitalList();
+    </script>
+
+</body>
+</html>

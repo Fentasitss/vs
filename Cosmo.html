@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gagarin</title>
+	<style>
+		body {
+			background-image:url('https://starwalk.space/gallery/images/what-is-space/1920x1080.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+text-align: center;
+}
+	</style>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		let spaceYear = prompt("В якому році Юрій Гагарін полетів у космос?");
+		if (spaceYear == null) {
+			alert('Ви повинні вказати рік');}
+		if(spaceYear < 1961){
+		alert('Це дуже рано');
+	    } else if(spaceYear> 1961){
+	    	alert("Це дуже пізно");
+	    } else if (spaceYear== 1961){
+	    	alert('Так');
+	    } else{
+	    	alert('Введіть будь ласка число');
+	    }
+	</script>
+
+</body>

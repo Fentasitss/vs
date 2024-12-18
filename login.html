@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        let login = prompt("Введіть логін користувача:", "User");
+        if (login === "User") {
+     let password = prompt ("Введіть пароль: ", "password")
+     if (password === null) {
+     document.write("<div><p>Вхід скасований</div></p>");
+     } else if (password ==="password") {
+     document.write ("<div><p>Ласкаво просимо!</div></p>");
+     } 
+     else {
+     document.write ("<div><p>Пароль невірний!</div></p>");
+     } 
+     }
+     else if (login === null) {
+     document.write ("<div><p>Вхід скасований</div></p>") ;
+     }
+     else {
+     document.write("<div><p>Користувач невизначений</div></p>" ) ;
+     }</script>
+</body>
+</html>

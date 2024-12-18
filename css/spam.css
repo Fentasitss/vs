@@ -1,0 +1,21 @@
+
+body{
+    background-image: url(https://img.freepik.com/free-vector/angry-emoji-framed-background_53876-89765.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+ }
+ div{
+    box-shadow: rgb(228, 102, 30) 0px 54px 55px, rgb(235, 188, 33) 0px -12px 30px, rgba(182, 75, 75, 0.993) 0px 4px 6px, rgb(230, 155, 69) 0px 12px 13px, rgb(230, 79, 79) 0px -3px 5px;
+    width: 400px;
+    font-size: 25px;
+    font-family: monospace;
+      color: #ffffff;
+      border-radius: 20px;
+      padding: 15px 20px;
+      text-align: center;
+      margin: 10px auto;
+      margin-top: 15%;
+      background-color: #131110e4;
+  }
